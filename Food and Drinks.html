@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+.pink {
+background-color: pink;
+}
+.container {
+  float: top-right;
+  display:block;
+	color:white;
+	padding:14px 20px;
+	background-image: url("ice.jpg");
+
+}
+.food {
+  float: top-right;
+  display:block;
+	color:white;
+	padding:14px 20px;
+	background-image: url("food.jpg");
+	}
+	
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.glow {
+  font-size: 80px;
+  color: red;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">FOOD AND DRINKS</h2>
+<div class="glow">
+<p style="text-align:center">Meet N' Eat.</p>
+</div>
+<div class="topnav">
+<button><a class="active" href="home.html">Home</button></a>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Drinks</li>
+    <li class="pink">milkshakes</li>
+    <li class="pink">juice</li>
+    <li class="pink">coke</li>
+    <li class="pink">Water</li>
+  </ul>
+</div>
+<div class="container">
+<img src="Strawberry.jpg" alt="Pineapple" style="width:25%;height:25%;margin-left:150px;">
+<img src="Oreo.jpg" alt="Pineapple" style="width:25%;height:25%;margin-left:150px;">
+<img src="orange.jpg" alt="Pineapple" style="width:25%;height:25%;margin-left:150px;">
+</div>
+<table>
+  <tr>
+    <th>Drinks</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Water</td>
+    <td>P4.95</td>
+  </tr>
+  <tr>
+    <td>Oreo milkshake</td>
+    <td>P14.95</td>
+  </tr>
+  <tr>
+    <td>fizz drinks</td>
+    <td>P10.95</td>
+  </tr>
+  <tr>
+    <td>Juice drinks</td>
+    <td>P10.95</td>
+  </tr>
+  <tr>
+    <td>Brownie milkshake</td>
+    <td>P14.95</td>
+  </tr>
+</table>
+<div class="columns">
+  <ul class="price">
+    <li class="header">Snacks</li>
+    <li class="pink">Mini pancake muffin</li>
+    <li class="pink">Swissroll</li>
+    <li class="pink">Caramal popcorn</li>
+    <li class="pink">hotdogs</li>
+  </ul>
+</div>
+<div class="food">
+<img src="hotdogs.jpg" alt="hotdogs" style="width:35%;height:20%;margin-left:150px;">
+<img src="Popcorn.jpg" alt="Pineapple" style="width:25%;height:25%;margin-left:150px;">
+<img src="swiss.jpg" alt="Pineapple" style="width:35%;height:25%;margin-left:150px;">
+</div>
+<table>
+  <tr>
+    <th>Snacks</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Hotdogs</td>
+    <td>P19.95</td>
+  </tr>
+  <tr>
+    <td>Vanilla swissroll</td>
+    <td>P14.95</td>
+  </tr>
+  <tr>
+    <td>Caramel popcorn</td>
+    <td>P10.00</td>
+  </tr>
+  <tr>
+    <td>Mini pancake muffin</td>
+    <td>P4.95</td>
+  </tr>
+  <tr>
+    <td>Chocolate bars</td>
+    <td>P9.95</td>
+  </tr>
+  <tr>
+    <td>Russian pie</td>
+    <td>P14.95</td>
+  </tr>
+</table>
+
+</body>
+</html>

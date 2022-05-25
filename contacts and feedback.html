@@ -1,0 +1,230 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>contacts and feedback</title>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+* {
+box-sizing: border-box;
+}
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+
+
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+
+
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+
+
+/* Style the container/contact section */
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 10px;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+float: left;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+}
+header {
+background-color: black;
+height:70px
+font family: Helvetica Bold;
+font-size: 35px;
+color: white;
+border: 2px outset white;
+text-align: center
+}
+body {
+
+background-color: #cccccc;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+article section h1 {
+color: white;
+text-align: center;
+}
+article section p {
+color: white;
+}
+footer {
+color: white;
+}
+nav ul li a {
+text-decoration: none
+}
+
+img {
+float: left;
+border: 1px dotted black;
+margin: 2px 2px 15px 20px;
+}
+.glow {
+font-size: 80px;
+color: #fff;
+text-align: center;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+
+
+@-webkit-keyframes glow {
+from {
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+
+
+to {
+text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}
+.w3-third {
+border: 3px outset red;
+background-color: grey ;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white; 
+  
+  }
+  
+</style>
+</head>
+<body>
+<div class="topnav">
+<button><a class="active" href="home.html">Home</button></a>
+</div>
+<header>
+<h1 class="glow">
+CONTACT US
+</h1>
+</header>
+<h2>Style Social Media Buttons</h2>
+
+<!-- Add font awesome icons -->
+<p> click blue button to follow on Facebook and red button for pinterest:</p>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.pinterest.com/" class="fa fa-pinterest"></a> 
+<a href="mailto:samuelschatrekschaatty@gmail.com">SchatrekSchatty</a>.<br>     
+<div class="row">
+<div class="column">
+<img src="Mail.jpg" style="width:100%">
+</div>
+<div class="column">
+<form action="/action_page.php">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="Botswana">Botswana</option>
+<option value="South Africa">South Africa</option>
+<option value="usa">USA</option>
+</select>
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+<input type="Submit" value="Submit">
+</form>
+</div>
+</div>
+</div>
+
+
+
+</body>
+<footer>
+Copyright 2022. Classic Movies
+</footer>
+
+
+
+
+
+</html>
+
