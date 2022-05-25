@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+background-image: url("red.jpg");
+background-color: #cccccc;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: red;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<p style="text-align:center">Tuesday 24 May- Friday 27 May</p>
+<div class="topnav">
+<button><a class="active" href="home.html">Home</button></a>
+</div>
+<img src ="strange.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+<img src ="memory.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+<img src ="fire.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+<img src ="umma.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+<img src ="morbius.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+<img src ="sonic.jpg" alt = "photo should be inserted here" width="30%" height="285px">
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Movie</li>
+    <li class="grey">Umma</li>
+    <li class="grey">Dr.Strange_Multiverse_Madness</li>
+    <li class="grey">Mr Bones3 son of bones</li>
+    <li class="grey">Sonic the Hedgehog 2</li>
+    <li class="grey">Morbius</li>
+	<li class="grey">Firestarter</li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Date</li>
+    <li class="grey">24/05/2022</li>
+    <li class="grey">25/05/2022</li>
+    <li class="grey">25/05/2022</li>
+    <li class="grey">26/05/2022</li>
+    <li class="grey">27/05/2022</li>
+	<li class="grey">27/05/2022</li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Time and Price</li>
+    <li class="grey">20:00/ P90.00</li>
+    <li class="grey">20:00/ P150.00</li>
+    <li class="grey">22:00/ P100.00</li>
+	<li class="grey">17:00/ P100.00</li>
+	<li class="grey">17:00/ P100.00</li>
+	<li class="grey">20:00/ P120.00</li>
+  </ul>
+</div>
+
+
+</body>
+</html>
